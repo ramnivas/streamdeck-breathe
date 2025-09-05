@@ -1,0 +1,47 @@
+{
+	"Name": "Breathe",
+	"Version": "0.1.0.0",
+	"Author": "Ramnivas Laddad",
+	"Actions": [
+		{
+			"Name": "Breathe Timer",
+			"UUID": "com.ramnivas.breathe",
+			"Icon": "imgs/actions/key",
+			"Tooltip": "Periodic breathing reminders. Press to start a breathing timer.",
+			"PropertyInspectorPath": "ui/settings.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/logo",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Breathing",
+	"CategoryIcon": "imgs/logo",
+	"CodePath": "bin/plugin.js",
+	"Description": "Configurable breathing reminders with customizable timer durations",
+	"Icon": "imgs/actions/key",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.ramnivas.breathe"
+}

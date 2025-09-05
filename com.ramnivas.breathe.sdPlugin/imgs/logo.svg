@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background rect that can be styled -->
+  <rect id="background" x="0" y="0" width="100" height="100" fill="#1a1a1a" />
+  <!-- Buddha silhouette in simple line art -->
+  <g fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head outline -->
+    <ellipse cx="50" cy="35" rx="18" ry="20"/>
+    
+    <!-- Hair/ushnisha (top knot) -->
+    <path d="M 50 15 Q 48 12 50 10 Q 52 12 50 15"/>
+    <path d="M 45 18 Q 45 16 46 15"/>
+    <path d="M 55 18 Q 55 16 54 15"/>
+    
+    <!-- Face features -->
+    <!-- Eyes (closed, meditative) -->
+    <path d="M 42 33 Q 44 32 46 33"/>
+    <path d="M 54 33 Q 56 32 58 33"/>
+    
+    <!-- Nose -->
+    <path d="M 50 35 L 50 38"/>
+    
+    <!-- Mouth (gentle smile) -->
+    <path d="M 47 41 Q 50 42 53 41"/>
+    
+    <!-- Ears -->
+    <path d="M 32 33 Q 30 33 30 36 Q 30 39 32 39"/>
+    <path d="M 68 33 Q 70 33 70 36 Q 70 39 68 39"/>
+    
+    <!-- Body/robe upper part -->
+    <path d="M 35 50 Q 32 52 32 60 L 32 70"/>
+    <path d="M 68 70 L 68 60 Q 68 52 65 50"/>
+    
+    <!-- Robe collar/neckline -->
+    <path d="M 40 50 Q 45 52 50 52 Q 55 52 60 50"/>
+    
+    <!-- Crossed legs in lotus position -->
+    <!-- Left leg -->
+    <path d="M 32 70 Q 30 75 32 80 Q 38 85 45 82"/>
+    <!-- Right leg -->
+    <path d="M 68 70 Q 70 75 68 80 Q 62 85 55 82"/>
+    <!-- Connecting/overlapping knees -->
+    <path d="M 45 82 Q 50 80 55 82"/>
+    
+    <!-- Feet visible at sides -->
+    <path d="M 30 80 Q 28 80 28 82 Q 28 84 30 84"/>
+    <path d="M 70 80 Q 72 80 72 82 Q 72 84 70 84"/>
+    
+    <!-- Hands in meditation mudra (on lap) -->
+    <ellipse cx="50" cy="72" rx="8" ry="4"/>
+    <path d="M 42 72 Q 45 70 50 70 Q 55 70 58 72"/>
+    
+    <!-- Lotus/cushion base -->
+    <path d="M 25 85 Q 30 88 40 87"/>
+    <path d="M 60 87 Q 70 88 75 85"/>
+    <path d="M 40 87 Q 45 88 50 88 Q 55 88 60 87"/>
+  </g>
+</svg>

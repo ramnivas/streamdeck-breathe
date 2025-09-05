@@ -1,0 +1,22 @@
+{
+	"extends": "@tsconfig/node20/tsconfig.json",
+	"compilerOptions": {
+		"customConditions": [
+			"node"
+		],
+		"module": "ES2022",
+		"moduleResolution": "Bundler",
+		"noImplicitOverride": true,
+		"paths": {
+			"@assets/*": ["../com.ramnivas.breathe.sdPlugin/*"],
+			"@sounds/*": ["../com.ramnivas.breathe.sdPlugin/sounds/*"],
+			"@imgs/*": ["../com.ramnivas.breathe.sdPlugin/imgs/*"]
+		}
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
