@@ -8,7 +8,7 @@ export class BreathingAnimator {
 	private totalSeconds = 0;
 	private remainingSeconds = 0;
 
-	start(ev: KeyDownEvent<BreathSettings>, totalSeconds: number): void {
+	start(ev: KeyDownEvent<BreathSettings>, totalSeconds: number, onCycleComplete?: () => void): void {
 		if (this.isAnimating) return;
 
 		this.totalSeconds = totalSeconds;
@@ -25,12 +25,20 @@ export class BreathingAnimator {
 
 		this.isAnimating = true;
 		let elapsedMs = 0;
+		let lastCycleNumber = 0;
 
 		this.animationTimerId = setInterval(async () => {
 			elapsedMs += frameInterval;
 
 			// Update remaining time
 			this.remainingSeconds = Math.max(0, this.totalSeconds - Math.floor(elapsedMs / 1000));
+
+			// Check if a cycle has completed
+			const currentCycleNumber = Math.floor(elapsedMs / (totalCycleSeconds * 1000));
+			if (currentCycleNumber > lastCycleNumber && onCycleComplete) {
+				lastCycleNumber = currentCycleNumber;
+				onCycleComplete();
+			}
 
 			const cycleMs = (elapsedMs % (totalCycleSeconds * 1000));
 			const cycleSeconds = cycleMs / 1000;
